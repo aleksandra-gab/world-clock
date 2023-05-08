@@ -1,5 +1,4 @@
 body {
-  background-color: #f9f7fe;
   font-family: sans-serif;
 }
 
@@ -21,12 +20,17 @@ select {
   font-size: 18px;
 }
 
+footer {
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
 .container {
-  background-color: white;
   max-width: 600px;
   margin: 60px auto;
   padding: 30px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 2px solid lightpink;
   border-radius: 10px;
 }
 
@@ -58,10 +62,5 @@ select {
 
 .github-link {
   text-decoration: none;
-}
-
-footer {
-  text-align: center;
-  font-size: 18px;
-  opacity: 0.5;
+  color: lightpink;
 }
