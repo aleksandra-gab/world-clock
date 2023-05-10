@@ -35,11 +35,15 @@ footer {
   opacity: 0.5;
 }
 
+select {
+  border: 1px solid lightpink;
+}
+
 .container {
   max-width: 600px;
   margin: 60px auto;
   padding: 30px;
-  border: 2px solid lightpink;
+  border: 1px solid lightpink;
   border-radius: 10px;
 }
 
