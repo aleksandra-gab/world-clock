@@ -12,7 +12,7 @@ function updateTime() {
     );
   }
 
-  //Rome
+  // Rome
   let romeElement = document.querySelector("#rome");
   if (romeElement) {
     let romeDateElement = romeElement.querySelector(".date");
@@ -21,6 +21,19 @@ function updateTime() {
 
     romeDateElement.innerHTML = romeTime.format("MMMM Do YYYY");
     romeTimeElement.innerHTML = romeTime.format("h:mm:ss [<small>]A[</small>]");
+  }
+
+  // Honolulu
+  let honoluluElement = document.querySelector("#honolulu");
+  if (honolulu) {
+    let honoluluDateElement = honoluluElement.querySelector(".date");
+    let honoluluTimeElement = honoluluElement.querySelector(".time");
+    let honoluluTime = moment().tz("Pacific/Honolulu");
+
+    honoluluDateElement.innerHTML = honoluluTime.format("MMMM Do YYYY");
+    honoluluTimeElement.innerHTML = honoluluTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
   }
 }
 
